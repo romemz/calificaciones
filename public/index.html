@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Calificaciones</h1>
+            
+            <form id="gradesForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="unidad1">Unidad 1</label>
+                    <input type="number" id="unidad1" min="0" max="100" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="unidad2">Unidad 2</label>
+                    <input type="number" id="unidad2" min="0" max="100" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="unidad3">Unidad 3</label>
+                    <input type="number" id="unidad3" min="0" max="100" step="0.1" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="btnCalcular" class="btnCalcular">CALCULAR PROMEDIO</button>
+                    <button type="button" id="btnLimpiar" class="btnLimpiar">LIMPIAR DATOS</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="promedio">Promedio</label>
+                    <input type="text" id="promedio" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="estatus">Estatus</label>
+                    <input type="text" id="estatus" readonly>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
